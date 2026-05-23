@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import { hello } from "db";
+import { hello } from "./packages/db/index.js";
 dotenv.config();
 const app = express();
 app.get("/", (_, res) => {
