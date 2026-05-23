@@ -4,6 +4,7 @@ import {hello} from "db"
 dotenv.config()
 const app = express()
 
+
 app.get("/",(_,res:Response)=>{
     res.send("Server Started !!")
    hello()
